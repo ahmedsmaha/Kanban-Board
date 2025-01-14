@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Kanban Board</title>
+  </head>
+  <body>
+    <div class="Kanban">
+      <section class="column column__not-started">
+        <h2 class="column-title">Not Started</h2>
+        <ul class="tasks-list" id="list-1"></ul>
+        <button class="btn btn-add-task">+ Add</button>
+      </section>
+      <section class="column column__in-progress">
+        <h2 class="column-title">In Progress</h2>
+        <ul class="tasks-list" id="list-2"></ul>
+        <button class="btn btn-add-task">+ Add</button>
+      </section>
+      <section class="column column__completed">
+        <h2 class="column-title">Completed</h2>
+        <ul class="tasks-list" id="list-3"></ul>
+        <button class="btn btn-add-task">+ Add</button>
+      </section>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
